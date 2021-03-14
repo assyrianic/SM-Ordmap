@@ -21,7 +21,7 @@ public void OnClientPutInServer(int client) {
 }
 
 public void OnClientDisconnect(int client) {
-	g_players.SetCellByCellKey(client, 0);
+	g_players.RemoveByCellKey(client);
 }
 
 public void OnGameFrame() {
